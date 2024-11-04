@@ -1,20 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* --foreground: #171717; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #0a0a0a; */
     --foreground: #ededed;
   }
 }
 
-body {
+body {  
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
@@ -25,3 +27,152 @@ body {
     text-wrap: balance;
   }
 }
+.footer {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 50px;           
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.048);  
+  position: relative;        
+  bottom: 0;
+  width: 100%;        
+}
+.nav-link {
+  font-family: 'Protest Strike', sans-serif;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: pink; 
+  transform: scale(1.2); 
+}
+
+.nav-link-underline {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 50%;
+  background-color: #9d1dd8;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover .nav-link-underline {
+  width: 100%;
+  left: 0;
+}
+
+
+.image-container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.image-container::before, .image-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: transparent;
+  transition: 1s box-shadow;
+}
+
+/* Hover effect for large screens */
+.image-container:hover::before, .image-container:hover::after {
+  display: block;
+  background: #FDA8CF;
+  border-radius: 150px;
+}
+
+.image-container:hover::before {
+  animation: clockwise 1s infinite; 
+}
+
+.image-container:hover::after {
+  background: #F3CE5E;
+  animation: counterclockwise 2s infinite;
+}
+
+/* Automatically show the effect on small and medium screens */
+@media (max-width: 768px) {
+  .image-container::before, .image-container::after {
+    display: block;
+    background: #FDA8CF;
+    border-radius: 150px;
+  }
+
+  .image-container::before {
+    animation: clockwise 1s infinite;
+  }
+
+  .image-container::after {
+    background: #F3CE5E;
+    animation: counterclockwise 2s infinite;
+  }
+}
+
+@keyframes clockwise {
+  0% { top: -5px; left: 0; }
+  12% { top: -2px; left: 2px; }
+  25% { top: 0; left: 5px; }
+  37% { top: 2px; left: 2px; }
+  50% { top: 5px; left: 0; }
+  62% { top: 2px; left: -2px; }
+  75% { top: 0; left: -5px; }
+  87% { top: -2px; left: -2px; }
+  100% { top: -5px; left: 0; }
+}
+
+@keyframes counterclockwise {
+  0% { top: -5px; right: 0; }
+  12% { top: -2px; right: 2px; }
+  25% { top: 0; right: 5px; }
+  37% { top: 2px; right: 2px; }
+  50% { top: 5px; right: 0; }
+  62% { top: 2px; right: -2px; }
+  75% { top: 0; right: -5px; }
+  87% { top: -2px; right: -2px; }
+  100% { top: -5px; right: 0; }
+}
+
+
+
+
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1, h2 {
+  transition: color 0.3s ease;
+}
+
+body.dark-mode input,
+body.dark-mode label {
+  color: #ffffff;
+}
+
+
+
+
+ 
