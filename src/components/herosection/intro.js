@@ -49,7 +49,7 @@ const Intro = () => {
                 <div className="col-span-12 sm:col-span-5 flex justify-center sm:justify-end m-7 relative image-container">
                     <Image
                         src={develop}
-                        alt="developer image"
+                        alt="developer"
                         className="w-auto h-auto rounded-full"
                     />
                 </div>
