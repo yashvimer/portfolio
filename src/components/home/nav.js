@@ -20,7 +20,7 @@ function Nav({onChange}) {
     <> 
     <Navbar className="sticky top-0 z-50 flex justify-between items-center w-full py-4 border-b-2 border-gray-300 bg-black">
       <NavbarBrand className="ml-4">  
-        <Image src={develop1} width={70} height={45}/>
+        <Image src={develop1} width={70} height={45} alt='developer'/>
       </NavbarBrand>
 
       {/* Hamburger icon for small screens */} 

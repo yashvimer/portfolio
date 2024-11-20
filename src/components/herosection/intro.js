@@ -33,7 +33,7 @@ const Intro = () => {
                         className={`mb-4 text-4xl sm:text-5xl lg:text-8xl font-extrabold ${isDarkMode ? "text-white" : "text-black"
                             }`}
                     >
-                        <span style={{ color: "#FF00FF" }}>Hello, I'm</span>{" "}
+                        <span style={{ color: "#FF00FF" }}>Hello, I&apos;m</span>{" "}
                         <TypeAnimation
                             sequence={["Yashvi", 1000, "Frontend Developer", 1000]}
                             wrapper="span"
