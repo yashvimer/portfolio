@@ -15,7 +15,7 @@ const Contact = () => {
       setIsDarkMode(updatedMode);
     });
 
-    observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });t
+    observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
     return () => observer.disconnect();
   }, []);
   return (
