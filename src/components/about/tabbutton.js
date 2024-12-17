@@ -13,7 +13,7 @@ const Tabbutton = ({ active, selectTab, children, isDarkMode }) => {
   return (
     <button onClick={selectTab}>
       <p
-        className={`mr-3 font-semibold hover:text-black ${
+        className={`mr-3 font-semibold  ${
           active ? activeColor : inactiveColor
         }`}
       >
