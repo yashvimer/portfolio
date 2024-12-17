@@ -72,7 +72,7 @@ const About = () => {
 
   return (
     <section className={`text-black dark:text-white`} id="about">
-      <div className="mt-16 sm:mt-8 md:mt-12 xl:mt-16 md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="mt-0 sm:mt-8 md:mt-12 xl:mt-16 md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="flex justify-center items-center">
           <Image
             src={develop}

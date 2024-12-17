@@ -58,9 +58,12 @@ function Nav({onChange}) {
                 <FaLinkedin className="text-white text-2xl hover:text-gray-400" />
               </a>
             </NavbarItem>
-            <NavbarItem style={{marginTop:'-12px',marginLeft:'-60px'}}>
-             <DarkMode onChange={onChange} />
+            <NavbarItem className="flex item-center justify-center">
+            <DarkMode onChange={onChange} />
             </NavbarItem>
+            {/* <NavbarItem className="flex item-center justify-center">
+             <DarkMode onChange={onChange} />
+            </NavbarItem> */}
           </div>
           
         </NavbarContent>

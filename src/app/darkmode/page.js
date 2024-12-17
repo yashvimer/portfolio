@@ -28,7 +28,7 @@ const DarkMode = ({ onChange = () => { } }) => {
     <div>
       <button
         onClick={handleToggle}
-        style={{ marginTop: '10px', marginLeft: '50px', color: 'white' }}
+        style={{color: 'white' }}
       >
         {isDarkMode ? <DarkModeIcon /> : <LightModeIcon />}
       </button>

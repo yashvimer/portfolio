@@ -21,13 +21,13 @@ const Intro = () => {
         return () => observer.disconnect();
     }, []);
     return (
-        <section className="lg:py-16 md:py-10 sm:py-10 px-4 sm:px-8 lg:px-12 min-h-[80vh] relative z-10" id="home">
+        <section className="lg:py-16 md:py-10 sm:py-10 px-4 sm:px-8 lg:px-12 min-h-[auto] md-min-h-[80vh] relative z-10" id="home">
             <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="col-span-12 sm:col-span-7 text-center sm:text-left"
+                    className="col-span-12 sm:col-span-7 text-center sm:text-left sm:text-left mt-6 sm:mt-8 md:mt-10 lg:mt-12"
                 >
                     <h1
                         className={`mb-4 text-4xl sm:text-5xl lg:text-8xl font-extrabold ${isDarkMode ? "text-white" : "text-black"
@@ -42,7 +42,8 @@ const Intro = () => {
                         />
                     </h1>
                     <p className="text-[#ff8080] text-base sm:text-lg mb-6 lg:text-xl">
-                        I create clean and efficient web designs for a seamless user experience.
+                        {/* I create clean and efficient web designs for a seamless user experience. */}
+                        I create responsive and user-friendly web interfaces.
                     </p>
                 </motion.div>
 
