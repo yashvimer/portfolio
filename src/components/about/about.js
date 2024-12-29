@@ -16,7 +16,6 @@ const TAB_DATA = [
         <li>React js</li>
         <li>Next js</li>
         <li>Bootstrap</li>
-        <li>Figma</li>
       </ul>
     ),
   },
